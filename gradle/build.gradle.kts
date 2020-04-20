@@ -1,7 +1,8 @@
 buildscript {
-    val kotlinVersion by extra("1.3.70")
+    val kotlinVersion by extra("1.4.255-SNAPSHOT")
     repositories {
         mavenCentral()
+        mavenLocal()
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
@@ -15,6 +16,7 @@ allprojects {
 
     repositories {
         mavenCentral()
+        mavenLocal()
     }
 }
 
